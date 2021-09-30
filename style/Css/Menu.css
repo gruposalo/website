@@ -1,0 +1,39 @@
+.Menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100% !important;
+    /* position: fixed; */
+    background-color: #333333;
+}
+
+.Menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.Menu ul li{
+    display: flex;
+    flex-direction: row;
+}
+
+.Logo{
+    margin-top: 10px;
+    padding: 0px 20px;
+}
+
+.Menu ul li a{
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Texto";
+    padding: 14px;
+    font-size: 13px;
+}
+
+.Menu ul li a:hover{
+    color: #8cd5ff;
+    transition-duration: 0.5s;
+}
