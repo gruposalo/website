@@ -8,7 +8,9 @@
         <link rel="stylesheet" href="../style/Css/Menu.css">
         <link rel="stylesheet" href="../style/Css/Colors.css">
         <script src="../style/Js/index.js"></script>
-        <link rel="shortcut icon" href="../style/Icons/Logo-25.png" type="image/x-icon">
+        <link rel="shortcut icon" href="../style/Icons/Logo-64.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         <title>GRUPO SALO | Salo Soluções Coporativa</title>
         <style>
             .notebook:not(.bg) {
@@ -16,16 +18,91 @@
                 position: relative;
                 border-radius: 4px;
             }
+
+            .web-browser #toolbar {
+                border-bottom: 2px solid #abacae;
+                padding: 12px;
+                padding-top: 9px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            .flickity-page-dots {
+                display: none
+            }
+
+            .gallery-cell {
+                width: 100%;
+                height: 400px;
+                margin-right: 10px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .slider {
+                display: block;
+                height: 400px;
+                width: 100%;
+                margin: auto;
+                position: relative;
+                counter-increment: gallery-cell;
+            }
+
+            .slider li {
+                list-style: none;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+            }
+
+            .slider input {
+                display: none;
+            }
+
+            .slider label {
+                background-color: #fff;
+                border-radius: 100%;
+                bottom: 10px;
+                cursor: pointer;
+                display: block;
+                height: 10px;
+                position: absolute;
+                width: 10px;
+                z-index: 10;
+            }
+
+            .slider li:nth-child(1) label {
+                left: 10px;
+            }
+
+            .slider li:nth-child(2) label {
+                left: 40px;
+            }
+
+            .slider li input:checked ~ img {
+                opacity: 1;
+                visibility: visible;
+                z-index: 10;
+            }
         </style>
     </head>
     <body>
+        <div id="inicio"></div>
+        <div class="irinicio"><a href="#inicio"><img class="black" title="Voltar para o inicio" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAAqklEQVQ4je3TsQkCQRCF4TeCtmAomAjWYqJgEWIiKNiJbRz2ciUoGJkYeRz8Bo6wHrro3aIgvmgHlm8eCyv9RIAJ0E+FLbnmAAybYmugAE7AEdgDg7rYyrExkAMLIKvVNMR8zoE50H4bdex8w0LQz6+jwCxs9gj0uQNs/U274d1WxdxJGplZFltsZoWkqaSNpDLa8knzu4axVBs2zh/8LEiyrf6fe8nAr+YCE4+6MWYKK08AAAAASUVORK5CYII="></a></div>
         <div class="Menu">
-            <a class="Logo" href=""><img src="../style/Icons/Logo-25.png" alt="Inicio"></a>
+            <a class="Logo" href=""><img src="../style/Icons/Logo-64.png" style="width: 25px;" alt="Inicio"></a>
             <ul>
                 <li><a href="">Suporte</a></li>
                 <li><a href="">Quem somos</a></li>
                 <li><a href="">Serviços</a></li>
                 <li><a href="">Parceiros</a></li>
+                <li><a href="">Colaborar</a></li>
                 <li><a href="">Política de Privacidade</a></li>
             </ul>
             <a class="Logo" href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAABrElEQVRIieWVPWsVURCGn4nJRYwklSH4UWqlkTRCtLJKq3YqqbTR/2AQ7cVfoIWkEUGwUrRJF0Es/EAxfkDSpAiEEJGLSXwsdoTrZW/23rtpxIHlsOednWfmnD1z4L8ydVSdVV+pyzneUEd3C3BM/WZhH9UnOap+VY/WBTTUD+q6eq5Nu5Dz79WhOpCZzPhKB/1q6pfrQO6rP9W9HfRBdUO9t1OcgQrOCLAWEc0yMSK2gLX06xvyBRhTj5SJ6kHgEPC5Ik5nUyfVX+pDNdq0UB+p2+rJviEZ7G5u7nP1tDqmnlFf5PydWoCEDKi31KZ/W1O9qVYtOVHl0AIbB6aBcWAFeBYRK/2nv8tWWok6BZzoI96biFio9FKvW8+uVVaivgSGgfPAdg9V7AEeAz8i4lSrMFjiPASsRsRiD4A/Ca4CB9rny36/T8BxdV+PgGGKfXzdjfPZXNsHaqNLQEOdy+4w1W1WtxP0zqLdlzZAixtzJv1UZ7sCtAS4qC7lx5vqojpv0cfm830z9SX1UqdYO554ixtvOp8J4DCwH/gOLANvgacUp3+rpyr+SfsNfDzEyMF94NYAAAAASUVORK5CYII="></a>
@@ -39,14 +116,19 @@
                 <img src="../style/Images/Data.jpg" style="margin-left: -52.5%;position: absolute;border-radius: 4px;margin-top: 13px;width: 45%;height: 51%;" alt="">
             </div>
             <h1 class="Titulo cblack">Somos especialistas no desenvolvimento web</h1><br>
-            <p class="Texto">Trabalhamos com criação de tecnologias para conectar você e seus clientes.</p><br><br>
+            <p class="TextoAcentuado">Trabalhamos com criação de tecnologias para conectar você e seus clientes.</p><br><br>
         </section>
         <section class="section gray">
-            <h2 class="Subtitulo cblack">Nosso serviços</h2>
+            <h2 class="Subtitulo cblack">O que fazemos</h2>
             <div class="Linha"></div>
             <div class="Linha"></div>
             <div class="Linha"></div>
             <div class="ConjuntoTemporario" style="width: 100%;">
+                <div>
+                    <img title="Protegemos sua marca para que você fique tranquilo." src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAEjUlEQVRoge2az29VRRTHP/1BSODhe2pfxR8Ug4ngj0iNOw2SuDQx0YUGgxt2Im78gSDRxB8NQkGNfwARwsKEuHWlJSoIRePPaBUSSagWUagtfe3G2D4X51167rlz75257+LqfZNJ5t05PzszZ86ZKXTQQQdZ6CpZXh3YCAwCa1u/K62xWeAv4AzwLfAZcKlk/W2hBmwDRoEFoOnZFoCTwDNA9X+3WqEG7AYu4298WpsGhmjDoaJLazPwNnCDY+w34BgwBowDc63vy4EB4E5gA7DKwXsBeB74oKBd3qgAh0n+RS8Ce4C7AmTdDexF9omVdwhx/KqgDnxlFM4A29tUWgF2AA0j+8uWzlJRB342ij4Gbi5Rxy3AiNExRonOVEjOxFtAd1kKFHqAYaPrFLAsj9Fnsx8GnlK/XwL2GZrVSACIwq8L08Bp4Djwb47OncgfK8JBYIuHranYTHImLK5DDjrfUDsJvA6syNG93/BtKupEDQmHek+4ltMjAU7odhaJXGnoAY4q+vMUPGd2KyEzpG/sxws60gSmgHUZNqxCUpuIfijUiRqypiMB2zNorSOXgSOmfYiE03mHM78ASzPk71K00wTOyjbFfJHsc8I68mMG7RrgE5LOPJfBUyF+aG718qCFUcW4J4c2xBGAJcDnhudMDo8OySdyaK+gTjyLzUs7Qh0BuI/krNyeQX+PopsH+iyBKwptZPF8GQd+8jAsFF8jUUjjtgz6H4CJVr8bsTEGlyODqn88xLpA2KLq2hz6Y6o/aAddjqxV/TFPo0KxBMkGNPKqRW1LYhm6HOlX/XE/u4LxGPEwugB8k8OjbUnUQS5HdOow622aP9YA75lvI+TPyIzqJ9Kbq5HBpqEfeBbJZleq74VObItex7eG6lcc43lYB/xtvi0lPRV/EzlX8nCN6jfsoMuRP1Xfbkgf9JAfgSIcRDJhH2hbLthB19I6rfp3eCoJRRNJg7YgG90H2pZEJuBy5HvV3+BtWhi6CK/ztS3f+TD0Ec9Ss2oGSKYovyIpiG4PAH8Yun+A+z2dWE88Rbnek4+TinFvoCNpudZDSImrac95GrVP8XzhQX8FOo2/RHb0CkkaXzO0TeAjsu8OKkgpEdE/7eVBC1XihdWODNoQR7px1yMvZvC8ouimKFDuDikBDeTeyYXQNH4l7v3iSuMHiJe6bwR50ELVKBxBzgiLh41Rpzxku/aLvSXpRZ4eovEJ4odiEJ40yoYdNDXgd0XzgqfsVxXPHHCrGX/X6H4i0PYEDhmBOx00A0jd/WiA3C4kC95FvHSA+IVDEzgQZrIby5EbEC14P+5l1i56Sc7EKB5Xpr6oI4WNVnAU9xtHUawGPjU6xnDU5+2iD9nIWtEs8DLFsuQIK5AQO0dyJkp3IsIy4H2jMDo0h5HbDl+sR07sSYe8AwQup6JPb5uAd4AbHWMTxJ/eoiqzwuLT24PATQ7e80jQOFLQrkKoIkWRzgCKtinksCt8TpSBKvLEfAL33W5am0cSwK2U8Dxd9j8M9CHL5l4k5ehn8aKgQfIfBiZL1t9BBx2k4D+fF9/d7UeDGQAAAABJRU5ErkJggg=="/>
+                    <div class="Linha"></div>
+                    <p class="TextoAcentuado cblack">Registro de marcas e<br> patentes</p>
+                </div>
                 <div>
                     <img title="Criamos websites sobmedida para o seu negócio." src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAC/0lEQVRoge3ZT4gURxTH8Y+6uP5ZgxiWgAYEQQSDIjG55CAm7CUnD+pB/JODIpEkCIIJhODJXEKyop4EDRoVvAgGwYsiIh78ExTEP0hAEMGLomEFUXR2cqhet+2d3qme2Wl3ob9Q0FX9uvr3ul7V1JuioqKiYiIxKcJmMb7BUnR1Vs4I3uAmjuBOq510oR+DqL/nMog/tPgh944DB7KlP09sXmgtw41U/Tl+wyzsEL5MHfvxCDvxYcr+DE4LX7IdPsKP6Enq9UTbzdgOsqPxS+reoaTt71TbtpTtY0xtUXgjdmW07G1kNDnn4WWZ+qwG1+m2ntT1VHRHy2xOT6ae1Yb8yTM9U9+B3qTTNUnbl0L4PMKmlO0HuIhTeBmvtyGLsLGJtlG56v1P7LxytZHgvNCacMSsy+dwv9NCmrAAfa08mA6ttWOpqEXWqkIrn/lY2MTmOa559wexC58Kq1oz7uFhC9pGkBdafXgtbnX5M9Pnicjn6sk7vko9O+ah1Sd+FL/O1FcUeE8XvihgXzi00o4P4EnmfjfmJddTMvd24ifMjHjPv8JWKJp28ouj+D7T9rmcocfxpHSEshOlbsyIsHtWtOMyl99dQjg+jSgPhcw0mjId+U789v5jw5vTKMp05BBqkbaPhd1zNGXOkZ+xW1yuMiDeaZQ/2V8kZcwp05HVQoIWMyIP8K0QYlGU6cg+zI20XY7r+DW28zIn+5UCtjX8U6TzMkdknfDLPy3C9oGwTYmmTEde4VKnOm/HkZU4kGnrHcV+CbZoPCLXcLANLW058klSYjkpPyHbKoTT2VbFFJ3sdwvY3s7UB0axrQtZZcsUHZEjQqwvbWL3DIczbauwHnMy7TVcwOWCWqI4bzi1/KETLyjIdsN6zjUyyAutW6nrzeKWzE4xLdEwxK1GRnnHCsuFlWTo/m38hf/GSl0ks4XTsqHcZBCfeffIoynj8aBnTxEHhpginBDVxoEDNfxu5B8ab4k5DF2CDcLwlj1XXgphfUzO3KioqKiYmPwPd85TBsX3BxYAAAAASUVORK5CYII="/>
                     <div class="Linha"></div>
@@ -67,6 +149,7 @@
                     <div class="Linha"></div>
                     <p class="TextoAcentuado cblack">Armazenamento de dados</p>
                 </div>
+
             </div>
             <div class="Linha"></div>
             <div class="Linha"></div>
@@ -76,11 +159,53 @@
             <div class="Linha"></div>
             <div class="Linha"></div>
         </section>
-        <section class="section blue500">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAB9klEQVRoge2ZMU7DQBBFdxECirREXCAV4gBAASWBA8A5oAFRQ6Ci4gDQUSAOgXIBQKKHhJIgIaQoEjyKjJUV2PGY2M4S7atW3hn7f+3s2PIaEwgEAgEfAGaAU+AF/2gDDWBGY+RkzGI1HGuMtCV4OY8VzhNgRbS1NcEAyLgJ3A4bl42rz2UqJe/LGEPK2E+SHPtCkr7pYQnFSsqXtNL6NySuiLXWlilES1KlTMyKBCO+EYz4hjdGgC2gBTwD9Txu+Kc3+6hCJC/iaWR9IxhRCUnItUBn7EaAKtBzhHwAsxnyD10TwMbI+rIaERP3ktYDPmV8BaTuQWBTcj41JVmIEWAeuJOUR2ABWARe5dp5Sn7NKakD5TPzNRJnwplbA7oyt5uQXwEeJOYGUH3b5WaEQXeK9sQ9UI2J23FKZvvHnAWuJf8BqGhM5G3E7U69OBNO7J7EdYF153q0uTtATWuiSCOpbRY4k9g3YElWNFqpzSwmNPrUgUBdzAxtk078FP0OBoOOBnCY0YNKX/bAbA+fo/9uieig3NxafaV8a1lru8aYV+fSu7W22H8CRayI3DdTSQ65z/hKK0/GWlplEIz4xkQbeTGm/wu/ZC2pAKsy/HWsEPen8dIYs2+MaXrcvC5SI+gfvTUYHPj4RAs4QnP0FggEAoEy+AZKqw4ouH59DAAAAABJRU5ErkJggg==">
+        <div class="Linha"></div>
+        <section class="section Conjunto" style="height: 800px;">
+            <div class="Conjunto">
+                <img style="height: 50px;" src="data:image/png;base64,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"/>
+                <div style="margin-left: 10px;text-align: left;">
+                    <p class="TextoAcentuado cblue">Solução para seus problemas</p>
+                    <div class="Conjunto" style="justify-content: start;">
+                        <h2 class="Subtitulo cblack">OctaCommerce</h2>
+                        <div class="Linha" style="width: 5px;"></div>
+                        <p class="TextoAcentuado cred100" style="font-size: small;">(BETA)</p>
+                    </div>
+                    <div class="Linha"></div>
+                    <p class="TextoAcentuado">Simples, objetivo, Feito para gerenciar o seu <strong>ecommerce</strong></p>
+                    <div class="Linha"></div>
+                    <button class="Botao blue300 cwhite">Saiba mais</button>
+                </div>
+            </div>
+            <div class="Linha" style="width: 50%;"></div>
+            <img style="position:absolute;right: 0;border-radius: 4px;box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);" src="../style/Images/Octa.png" alt="Octacommerce">
         </section>
         <section class="section gray">
-
+            <div class="Linha"></div>
+            <div class="Linha"></div>
+            <h1 class="Titulo cblack">Nossos parceiros</h1>
+            <div class="slider gallery js-flickity">
+                <div class="gallery-cell">
+                    <div class="Card">
+                        <a href="https://www.sensai.com.br">
+                            <div class="headCard" style="background-color: #172820;">
+                                <img style="padding: 20px;" src="../style/Images/partners/Sensai.png" alt="Sensai">
+                            </div>
+                            <div class="Linha"></div>
+                            <div class="bodyCard">
+                                <h1 class="black"></h1>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-cell">
+                    <div class="Card">
+                        <h1 class="Titulo cblack"></h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+   
         </section>
     </body>
 </html>
