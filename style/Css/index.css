@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Texto";
-    src: url("../Fonts/Inter-Light.ttf");
+    src: url("../Fonts/Inter-Medium.ttf");
 }
 
 @font-face {
@@ -107,19 +107,16 @@ html{
 }
 
 .Card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     background-color: #fff;
     box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
     border-radius: 4px;
-    height: 250px;
-    width: 500px;
+    padding: 20px 70px;
 }
 
 .headCard{
     top: 0;
     width: 100%;
-}
-
-.bodyCard{
-    width: 100%;
-    padding: 20px;
 }

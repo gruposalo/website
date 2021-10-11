@@ -5,6 +5,10 @@
     background-color: #fff;
 }
 
+.green{
+    background-color: rgb(59, 138, 59);
+}
+
 /* gray */
 .gray{
     background-color: #f5f5f5;
@@ -90,6 +94,10 @@
 /* Color white */
 .cwhite{
     color: #fff;
+}
+
+.cgreen{
+    color: rgb(59, 138, 59);
 }
 
 /* Color gray */
