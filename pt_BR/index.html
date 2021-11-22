@@ -9,8 +9,10 @@
         <link rel="stylesheet" href="../style/Css/Colors.css">
         <script src="../style/Js/index.js"></script>
         <link rel="shortcut icon" href="../style/Icons/Logo-64.png" type="image/x-icon">
-        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <script src="../style/Js/Layout.js"></script>
         <title>GRUPO SALO | Salo Soluções Coporativa</title>
         <style>
             .notebook:not(.bg) {
@@ -18,96 +20,14 @@
                 position: relative;
                 border-radius: 4px;
             }
-
-            .web-browser #toolbar {
-                border-bottom: 2px solid #abacae;
-                padding: 12px;
-                padding-top: 9px;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                -webkit-user-select: none;
-                -moz-user-select: none;
-                -ms-user-select: none;
-                user-select: none;
-            }
-
-            .flickity-page-dots {
-                display: none
-            }
-
-            .gallery-cell {
-                width: 100%;
-                height: 400px;
-                margin-right: 10px;
-                display: flex;
-                justify-content: center;
-            }
-
-            .slider {
-                display: block;
-                height: 400px;
-                width: 100%;
-                margin: auto;
-                position: relative;
-                counter-increment: gallery-cell;
-            }
-
-            .slider li {
-                list-style: none;
-                position: absolute;
-                height: 100%;
-                width: 100%;
-            }
-
-            .slider input {
-                display: none;
-            }
-
-            .slider label {
-                background-color: #fff;
-                border-radius: 100%;
-                bottom: 10px;
-                cursor: pointer;
-                display: block;
-                height: 10px;
-                position: absolute;
-                width: 10px;
-                z-index: 10;
-            }
-
-            .slider li:nth-child(1) label {
-                left: 10px;
-            }
-
-            .slider li:nth-child(2) label {
-                left: 40px;
-            }
-
-            .slider li input:checked ~ img {
-                opacity: 1;
-                visibility: visible;
-                z-index: 10;
-            }
         </style>
     </head>
     <body>
         <div id="inicio"></div>
         <div class="irinicio"><a href="#inicio"><img class="black" title="Voltar para o inicio" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAAqklEQVQ4je3TsQkCQRCF4TeCtmAomAjWYqJgEWIiKNiJbRz2ciUoGJkYeRz8Bo6wHrro3aIgvmgHlm8eCyv9RIAJ0E+FLbnmAAybYmugAE7AEdgDg7rYyrExkAMLIKvVNMR8zoE50H4bdex8w0LQz6+jwCxs9gj0uQNs/U274d1WxdxJGplZFltsZoWkqaSNpDLa8knzu4axVBs2zh/8LEiyrf6fe8nAr+YCE4+6MWYKK08AAAAASUVORK5CYII="></a></div>
-        <div class="Menu">
-            <a class="Logo" href=""><img src="../style/Icons/Logo-64.png" style="width: 25px;" alt="Inicio"></a>
-            <ul>
-                <li><a href="">Suporte</a></li>
-                <li><a href="">Quem somos</a></li>
-                <li><a href="">Serviços</a></li>
-                <li><a href="">Planos</a></li>
-                <li><a href="">Parceiros</a></li>
-                <li><a href="">Colaborar</a></li>
-                <li><a href="">Política de Privacidade</a></li>
-            </ul>
-        </div>
-        <section class="section">
+        <div class="Menu"></div>
+        <section class="section Alinhado">
+            <div class="Linha"></div>
             <div class="Linha"></div>
             <div class="Linha"></div>
             <div class="Linha"></div>
@@ -116,9 +36,9 @@
                 <img src="../style/Images/Data.jpg" style="margin-left: -52.5%;position: absolute;border-radius: 4px;margin-top: 13px;width: 45%;height: 51%;" alt="">
             </div>
             <h1 class="Titulo cblack">Somos especialistas no desenvolvimento web</h1><br>
-            <p class="TextoAcentuado">Trabalhamos com criação de tecnologias para conectar você e seus clientes.</p><br><br>
+            <p class="Texto">Trabalhamos com criação de tecnologias para conectar você e seus clientes.</p><br><br>
         </section>
-        <section class="section gray">
+        <section class="section Alinhado gray">
             <h2 class="Subtitulo cblack">O que fazemos</h2>
             <div class="Linha"></div>
             <div class="Linha"></div>
@@ -160,7 +80,7 @@
             <div class="Linha"></div>
         </section>
         <div class="Linha"></div>
-        <section class="section Conjunto" style="height: 800px;">
+        <section class="section Alinhado Conjunto" style="height: 800px;">
             <div class="Conjunto">
                 <img style="height: 50px;" src="data:image/png;base64,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"/>
                 <div style="margin-left: 10px;text-align: left;">
@@ -179,7 +99,7 @@
             <div class="Linha" style="width: 50%;"></div>
             <img style="position:absolute;right: 0;border-radius: 4px;box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);" src="../style/Images/Octa.png" alt="Octacommerce">
         </section>
-        <section class="section gray">
+        <section class="section gray Alinhado">
             <div class="Linha"></div>
             <div class="Linha"></div>
             <h1 class="Titulo cblack">Nossos planos</h1>
@@ -246,7 +166,67 @@
             </div>
         </section>
         <section class="section">
-   
+            <!-- <div class="Esquerda" style="background-image: url('../style/Images/city.jpg');background-size: cover;"></div> -->
+            <div class="Esquerda Alinhado" style="display: flex;">
+                <h1 class="Titulo">Meios de contato</h1>
+                <div class="Linha"></div>
+                <div style="text-align: start;">
+                    <p class="TextoAcentuado">Email:
+                        <a href="mailto:suporte@salosolucoes.com.br" class="Link">suporte@salosolucoes.com.br</a>
+                    </p>
+                    <br>
+                    <p class="TextoAcentuado">Telefone:
+                        <a href="tel:+5511969162993" class="Link cblack">(11) 96916-2993</a>
+                    </p>
+                </div>
+            </div>
+            <div class="Direita Alinhado" style="display: flex;">
+                <form class="Formulario" method="post">
+                    <h1 class="Titulo">Solicite uma cotação</h1>
+                    <div class="Linha"></div>
+                    <p class="Texto">Obrigatório o preenchimento dos campos com * </p>
+                    <div class="Linha"></div>
+                    <div class="Conjunto">
+                        <input type="text" style="width: 110%;" class="Entrada" name="Nome" placeholder="Nome completo *" required>
+                        <div class="Linha" style="width: 20px;"></div>
+                        <input type="text" style="width: 90%;" class="Entrada" name="cpf" placeholder="CPF/CNPJ *" required>
+                    </div>
+                    
+                    <div class="Linha"></div>
+                    <input type="text" class="Entrada" name="Empresa" placeholder="Nome da empresa" required>
+                    <div class="Linha"></div>
+                    <div class="Conjunto">
+                        <input type="text" style="width: 120%;" class="Entrada" name="Email" placeholder="Email comercial *" required>
+                        <div class="Linha" style="width: 20px;"></div>
+                        <input type="text" style="width: 80%;" class="Entrada" name="Telefone" placeholder="Telefone para contato *" required>
+                    </div>
+                    <div class="Linha"></div>
+                    <select class="Entrada" name="Servicos" required>
+                        <option value="0">Selecione o serviço de interesse *</option>
+                        <option value="1">Registro de marcas e patentes</option>
+                        <option value="2">Criação de websites</option>
+                        <option value="3">rankeamento de pesquisa (SEO)</option>
+                        <option value="4">Web Apps</option>
+                        <option value="5">Armazenamento de dados</option>
+                        <option value="6">Sistema para ecommerce</option>
+                        <option value="6">Site institucional para prestadores de serviços</option>
+                    </select>
+                    <div class="Linha"></div>
+                    <button class="g-recaptcha Botao blue cwhite" data-sitekey="6Lca01AdAAAAAKbHtx62_gGFakFG1u-qeNgbC5LZ" data-callback='onSubmit' data-action='submit'>Solicitar contato</button>
+                </form>
+            </div>
         </section>
+        <section class="Rodape"></section>
+        <div class="Alinhado">
+            <div class="Linha"></div>
+            <div style="display: flex;justify-content: center;"><p class="TextoAcentuado">Copyright 2021 - Todos os direitos reservados.</p></div>
+            <div class="Linha"></div>
+        </div>
+        <script>
+            Carregar('./', 'pt-br');
+            function onSubmit(token) {
+                document.querySelector('.Formulario').submit();
+            }
+        </script>
     </body>
 </html>
