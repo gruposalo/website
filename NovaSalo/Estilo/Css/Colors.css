@@ -1,0 +1,183 @@
+/* Backgrounds */
+
+/* white */
+.white{
+    background-color: #fff;
+}
+
+.green{
+    background-color: rgb(59, 138, 59);
+}
+
+/* gray */
+.gray{
+    background-color: #f5f5f5;
+}
+
+/* black */
+.black{
+    background-color: #333333;
+}
+
+.black900{
+    background-color: #000000;
+}
+
+.black700{
+    background-color: #1a1a1a;
+}
+
+.black500{
+    background-color: #333333;
+}
+
+.black300{
+    background-color: #4d4d4d;
+}
+
+.black100{
+    background-color: #666666;
+}
+
+/* blue */
+.blue{
+    background-color: #0071e3;
+}
+
+.blue900{
+    background-color: #002e99;
+}
+
+.blue700{
+    background-color: #0d52bf;
+}
+
+.blue500{
+    background-color: #3689e6;
+}
+
+.blue300{
+    background-color: #64baff;
+}
+
+.blue100{
+    background-color: #8cd5ff;
+}
+
+/* Red */
+.red{
+    background-color: #c6262e;
+}
+
+.red900{
+    background-color: #7a0000;
+}
+
+.red700{
+    background-color: #a10705;
+}
+
+.red500{
+    background-color: #c6262e;
+}
+
+.red300{
+    background-color: #ed5353;
+}
+
+.red100{
+    background-color: #ff8c82;
+}
+
+/* Color atributes */
+
+/* Color white */
+.cwhite{
+    color: #fff;
+}
+
+.cgreen{
+    color: rgb(59, 138, 59);
+}
+
+/* Color gray */
+.gray{
+    color: #f5f5f5;
+}
+
+/* Color black */
+.cblack{
+    color: #333333;
+}
+
+.cblack900{
+    color: #000000;
+}
+
+.cblack700{
+    color: #1a1a1a;
+}
+
+.cblack500{
+    color: #333333;
+}
+
+.cblack300{
+    color: #4d4d4d;
+}
+
+.cblack100{
+    color: #666666;
+}
+
+/* Color blue */
+
+.cblue{
+    color: #0071e3;
+}
+
+.cblue900{
+    color: #002e99;
+}
+
+.cblue700{
+    color: #0d52bf;
+}
+
+.cblue500{
+    color: #3689e6;
+}
+
+.cblue300{
+    color: #64baff;
+}
+
+.cblue100{
+    color: #8cd5ff;
+}
+
+/* Color red */
+
+.cred{
+    color: #c6262e;
+}
+
+.cred900{
+    color: #7a0000;
+}
+
+.cred700{
+    color: #a10705;
+}
+
+.cred500{
+    color: #c6262e;
+}
+
+.cred300{
+    color: #ed5353;
+}
+
+.cred100{
+    color: #ff8c82;
+}

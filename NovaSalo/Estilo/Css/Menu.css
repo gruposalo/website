@@ -1,0 +1,112 @@
+.Menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100% !important;
+    position: fixed;
+    background-color: #fff;
+    z-index: 10;
+    /* box-shadow: 0 7px 30px -10px rgba(107, 125, 241, 0.5); */
+}
+
+.Menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.Menu ul li{
+    display: flex;
+    flex-direction: row;
+}
+
+.Logo{
+    position: absolute;
+    left: 10px;
+    padding: 12px 10px;
+}
+
+.Menu ul li a{
+    display: flex;
+    text-decoration: none;
+    /* color: #fff; */
+    color: #333;
+    padding: 25px 14px;
+    font-size: 13px;
+}
+
+.Menu ul li a:hover{
+    color: #0071e3;
+    transition-duration: 0.3s;
+}
+
+.Anuncio{
+    display: flex;
+    width: 100%;
+    padding: 10px 0px;
+    justify-content: center;
+    background-color: #0071e3;
+}
+
+.Anuncio a{
+    color: #fff;
+}
+
+.Anuncio a:hover{
+    text-decoration: underline;
+    transition-duration: 1s;
+}
+
+.FecharAnuncio{
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+.Cabecalho{
+    display: flex;
+    padding: 7px 0px;
+    background-color: #f1f1f1;
+}
+
+.Cabecalho ul{
+    justify-content: flex-start;
+}
+
+.Cabecalho ul li a{
+    display: flex;
+    padding: 0px 10px;
+}
+
+.Cabecalho a{
+    color: #000;
+    
+}
+
+.Cabecalho a:hover{
+    text-decoration: underline;
+    transition-duration: 1s;
+}
+
+.Links{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 800px) {
+    .ulLinks{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Links{
+        display: none;
+    }
+
+    .controles{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
