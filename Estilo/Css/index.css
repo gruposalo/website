@@ -25,6 +25,7 @@ html{
 }
 
 .Link{
+    cursor: pointer;
     text-decoration: none;
     color: #64baff;
 }
