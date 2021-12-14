@@ -25,7 +25,7 @@ function Carregar(Caminho, Lingua){
             
         </ul>
         <div class="Anuncio">
-            <p class="cwhite">Confira o lançamento do fundo <a class="Link" href="#">OCTA FI RF</a></p>
+            <p class="cwhite">Confira o lançamento do fundo <a class="Link" href="`+Caminho+`Fundos/Octa">OCTA FI RF</a></p>
             <p class="cwhite FecharAnuncio" onclick="FecharAnuncio()">x</p>
         </div>
     `;

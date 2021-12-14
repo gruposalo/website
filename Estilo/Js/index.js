@@ -10,4 +10,5 @@ function menu(){
 
 function FecharAnuncio(){
     document.querySelector('.Anuncio').remove();
+    document.querySelector('.Menu').style.borderBottom = '2px solid #f5f5f5';
 }

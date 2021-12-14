@@ -53,10 +53,19 @@
                 </div>
             </div>
         </section>
+        <section class="section Alinhado" style="height: 95%;background-image: url('../Estilo/Imagens/Fundos\ 2.jpg');background-size: cover;background-repeat: no-repeat;align-items: flex-start;">
+            <div class="Principal">
+                <h1 class="Titulo cwhite">Conheça as nossas principais atividades</h1>
+                <div class="Linha"></div>
+                <p class="Texto cwhite">Oferecemos nossa expertise na gestão de investimentos através de diferentes alternativas e veículos, tanto no Brasil quanto no exterior. Conheça as diferentes soluções que oferecemos.</p>
+                <div class="Linha"></div>
+                <a class="Link cwhite" href="">Saiba mais</a>
+            </div>
+        </section>
         <section class="section Alinhado">
             <h1 class="Titulo cblack">Nossos fundos</h1>
             <div class="Linha"></div>
-            <div class="descricao gray" style="border-radius: 5px;padding: 30px;display: flex;flex-direction: column;align-items: flex-start;">
+            <div class="descricao gray">
                 <h1 class="Titulo cblack">OCTA FI RF</h1>
                 <p class="Texto cblack">Risco: <strong class="cblue">Baixo</strong></p>
                 <div class="Linha"></div>
@@ -64,9 +73,6 @@
                 <div class="Linha"></div>
                 <a href="./Fundos/Octa/" class="Texto Link cblue">Conhecer</a>
             </div>
-        </section>
-        <section class="section gray Alinhado">
-            <h1 class="Titulo cblack">MAIS DE DOIS ANOS DE EXPERIENCIA</h1>
         </section>
         <div class="Rodape"></div>
         <script src="../Estilo/Js/index.js"></script>
