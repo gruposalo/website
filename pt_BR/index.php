@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="../Estilo/Css/Menu.css">
         <link rel="stylesheet" href="../Estilo/Css/Colors.css">
         <title>GRUPO SALO - Salo Solucões Corporativas</title>
-        <link rel="shortcut icon" href="../Estilo/Icones/Logo azul.png" type="image/x-icon">
+        <link rel="shortcut icon" href="../Estilo/Icones/Salo/Logo azul.png" type="image/x-icon">
         <style>
             .Principal{
                 margin-left: 50px;

@@ -11,7 +11,7 @@ function Carregar(Caminho, Lingua){
         <ul name="ulLinks">
             <div class="controles">
                 <a class="Logo" href="`+Caminho+`">
-                    <img src="`+Caminho+`../Estilo/Icones/Logo.png" style="width: 40px;" alt="Inicio">
+                    <img src="`+Caminho+`../Estilo/Icones/Salo/Logo.png" style="width: 40px;" alt="Inicio">
                 </a>
                 <li><a><img name="controle" class="Desocultar" onclick="menu()" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAAAMElEQVRIie3UQQ0AMAzDQHfIx7zlMCnqHj4Cziug3xRw05GTDkhZBfT2COmdV6+cAZVYAgcpIVnHAAAAAElFTkSuQmCC"/></a></li>
             </div>
@@ -20,7 +20,7 @@ function Carregar(Caminho, Lingua){
                 <li><a href="`+Caminho+`Fundos">Fundos</a></li>
                 <li><a href="`+Caminho+`Contato">Contato</a></li>
                 <li><a href="`+Caminho+`Governaça">Governaça</a></li>
-                <li><a href="`+Caminho+`Artigos">Artigos</a></li>
+                <li><a href="`+Caminho+`Blog">Blog</a></li>
             </div>
             
         </ul>
@@ -62,7 +62,7 @@ function Carregar(Caminho, Lingua){
                 <div class="Linha" style="width: 50px;"></div>
                 <div>
                     <div class="Conjunto">
-                        <img src="`+Caminho+`../Estilo/Icones/Logo.png" style="width: 60px;">
+                        <img src="`+Caminho+`../Estilo/Icones/Salo/Logo azul.png" style="width: 60px;">
                     </div>
                 </div>
                 <div class="Linha" style="width: 50px;"></div>
@@ -73,6 +73,11 @@ function Carregar(Caminho, Lingua){
                     <a href="`+Caminho+`Parceiros" class="Link">Nossos parceiros</a><br>
                 </div>
                 <div class="Linha" style="width: 50px;"></div>
+                <div class="LinksRodape">
+                    <p>SEGURANÇA</p>
+                    <div class="Linha"></div>
+                    <a href="https://transparencyreport.google.com/safe-browsing/search?url=www.salosolucoes.com.br"><img title="Site seguro" src="../`+Caminho+`Estilo/Icones/Layout/selo-google.png"></a>
+                </div>
                 
             </div>
         </div>
